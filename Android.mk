@@ -99,4 +99,8 @@ endif
 ifeq ($(TARGET_PRODUCT),$(filter $(TARGET_PRODUCT),mek_8q mek_8q_car mek_8q_car2))
     include $(LOCAL_PATH)/conf/nxp/mek_8q/Android.mk
 endif
+ifeq ($(TARGET_PRODUCT), ucm_imx8m_mini)
+    include $(LOCAL_PATH)/conf/nxp/ucm_imx8m_mini/Android.mk
+endif
+
 endif # BOARD_HAVE_BLUETOOTH_NXP
